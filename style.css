@@ -1,0 +1,1520 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: Raleway, Impact;
+}
+
+.bloc-page
+{
+	width: 100%;
+	margin: auto;
+}
+
+/* ------------------------------------------------------------------------------------------HEADER-------------------------------------------------------------------------------------------- */
+header
+{
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: wrap;
+	height: 160px;
+	width: 100%;
+}
+
+
+.logo-miniature
+{
+	width: 12%;
+	height: 65%;
+	object-fit: none;
+}
+
+/* --------------------------------------------------------------------------------------------NAV-------------------------------------------------------------------------------------------- */
+
+nav
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	height: 35%;
+	font-size: 1.3em;
+	width: 100%;
+	margin: auto;
+}
+
+.list-nav
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 100px;
+	width: 250px;
+	margin: auto 0px;
+	text-align: center;
+}
+
+a
+{
+	text-decoration: none;
+	color:black;
+}
+
+:hover.list-nav
+{
+	color: #0065FC;
+	border-top: 5px solid #0065FC;
+}
+
+:hover.lien-nav
+{
+	color: #0065FC;
+	font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------------------DIV"RECHERCHE"-------------------------------------------------------------------------------------------------- */
+
+.recherche
+{
+	width: 95%;
+	height: 400px;
+	margin: 30px auto;
+}
+
+h1
+{ 
+	font-weight: bold;
+}
+
+p
+{
+	font-weight: 500;
+	font-size: 23px;
+}
+
+#nature-ville
+{
+	position: relative;
+	bottom: 15px;
+}
+
+form
+{
+	display: flex;
+}
+
+#icon-map
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90px;
+	height: 80px;
+	font-size: 25px;
+	background-color: #F2F2F2;
+	border: 5px solid #F2F2F2;
+	border-radius: 25px;
+	padding-right: 10px;
+}
+
+input[type="search"]
+{
+	position: relative;
+	right: 20px;
+	height: 80px;
+	width:320px;
+	font-size: 25px;
+	font-weight: bold;
+	padding-left: 30px;
+	border: 5px solid #F2F2F2;
+	z-index: 1;
+}
+
+input[type="submit"]
+{
+	position: relative;
+	right: 75px;
+	height: 80px;
+	width: 220px;
+	padding-left: 60px;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+	background-color: #0065FC;
+	border: 1px solid #0065FC;
+	border-radius: 25px;
+}
+
+button
+{
+	visibility: hidden;
+	height: 80px;
+	width: 80px;
+	color: white;
+	background-color: #0065FC;
+	font-size: 30px;
+}
+
+#titre-filtre
+{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#titre-filtre-mobile
+{
+	visibility: hidden;
+}
+
+.bordure-filtre
+{
+	margin: 15px;
+	border-radius: 35px;
+}
+
+.big-filtre
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	font-family: arial;
+	margin: 50px auto;
+	
+	/*min-width: 1250px;*/
+}
+
+.icon
+{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	height: 70px;
+	width: 70px;
+	color:#0065FC;
+	background-color: #DEEBFF;
+	border: 4px solid #DEEBFF;
+	border-radius: 50%;
+}
+
+.filtre
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	font-size: 30px;
+	border-radius: 50px;
+	padding-left: 70px;
+	padding-right: 25px;
+	border: 4px solid lightgrey;
+}
+
+.text-filtre
+{
+	position: relative;
+	left: 10px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+:hover.bordure-filtre
+{
+	background-color: #0065FC;
+	color: #F2F2F2;
+}
+/* -------------------------------------------------------------------------------------MAIN-------------------------------------------------------------------------------------------------- */
+
+#icon-logement
+{
+	display:inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+	font-size: 23px;
+	color: #0065FC;
+	border: 1px solid grey;
+	border-radius: 50%;
+	margin-left: 70px;
+}
+
+.logement
+{
+	display: inline;
+	width: 100%;
+	height: 20px;
+	font-weight:500;
+	margin-left: 20px;
+}
+
+#big-card
+{
+	display: flex;
+	justify-content: space-around;
+	width: 98%;
+	margin: 90px auto;
+
+	/*min-width: 1250px;*/
+}
+
+/* -------------------------------------------------------------------------------------SECTION HEBERGEMENT-------------------------------------------------------------------------------------------------- */
+#hebergement
+{
+	height: 750px;
+	width: 65%;
+	background-color: #F2F2F2;
+	border-radius: 30px;
+}
+
+#text-hebergement-bigcard
+{
+	position: relative;
+	top: 10px;
+	font-size: 30px;
+	text-align: left;
+	margin: 30px 70px;
+}
+
+.hebergement-card
+{
+	height: 550px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	margin: auto 0px;
+}
+
+
+.hebergement-inside-card
+{
+	height: 240px;
+	width: 28%;
+	background-color: white;
+	border-radius: 20px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	padding: 3px;
+	margin: 10px 18px;
+}
+
+.img-hebergement
+{
+	height: 150px;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.img-hebergement-card
+{
+	height: 150px;
+	width: 100%;
+	border: 4px solid white;
+	object-fit: cover;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.text-hebergement-card
+{
+	position: relative;
+	bottom: 20px;
+	font-size: 21px;
+	font-weight: bold;
+	text-align: left;
+	padding: 0px 15px;
+}
+
+.prix-text-hebergement-card
+{
+	position: relative;
+	bottom: 37px;
+	font-size: 17px;
+	font-weight: 400;
+	text-align: left;
+	padding: 0px 15px;
+}
+
+
+.blue-hebergement-star
+{
+	display: inline;
+	position: relative;
+	bottom: 50px;
+	right: 0px;
+	font-size: 15px;
+	color:#0065FC;
+	text-align: left;
+	padding: 0px 15px;
+}
+
+.grey-hebergement-star
+{
+	display: inline;
+	position: relative;
+	bottom: 50px;
+	right: 30px;
+	font-size: 15px;
+	color: lightgray;
+	text-align: left;
+	padding: 0px 15px;
+}
+
+h3
+{
+	font-size: 23px;
+	text-align: left;
+	margin: 30px 80px;
+}
+/* -------------------------------------------------------------------------------------SECTION POPULAIRE-------------------------------------------------------------------------------------------------- */
+.populaire
+{
+	width: 25%;
+	font-weight: bold;
+	text-align: center;
+	background-color: #F2F2F2;
+	border-radius: 30px;
+}
+
+#titre-populaire
+{
+	position: relative;
+	top: 40px;
+	display: flex;
+}
+
+#text-populaire-bigcard
+{
+	height: 100%;
+	width: 85%;
+	font-size: 30px;
+	text-align: left;
+	margin: auto;
+	padding-left: 40px;
+}
+
+#icon-populaire
+{
+	height: 100%;
+	width: 15%;
+	font-size: 22px;
+	margin: auto;
+}
+
+.populaire-card
+{
+	position: relative;
+	top: 36px;
+	height: 660px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.populaire-inside-card
+{
+	position: relative;
+	right: 0px;
+	display: flex;
+	justify-content: flex-start;
+	height: 175px;
+	width: 90%;
+	background-color: white;
+	border-radius: 30px;
+	margin:  15px auto;
+}
+
+.lien-populaire-card
+{
+	display: flex;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.img-populaire
+{
+	height: 100%;
+	width: 40%;
+	border: 6px solid white;
+	background-color: white;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	margin: auto;
+	overflow: hidden;
+	
+}
+
+.img-populaire-card
+{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.populaire-inside-card-right
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 70%;
+}
+
+.text-populaire-card
+{
+	height: 50px;
+	font-size: 23px;
+	font-weight: bold;
+	text-align: left;
+	margin: 20px 0px 0px 20px;
+}
+
+.prix-text-populaire-card
+{
+	font-size: 17px;
+	font-weight: 400;
+	margin: 5px 0px 0px 20px;
+}
+
+.prix-text-populaire-card-long
+{
+	position:relative;
+	top: 20px;
+	font-size: 17px;
+	font-weight: 400;
+	margin: 5px 0px 0px 20px;
+}
+
+.blue-populaire-star
+{
+	font-size: 12px;
+	text-align: left;
+	color: #0065FC;
+	margin: 50px 0px 0px 20px;
+}
+
+.grey-populaire-star
+{
+	position: relative;
+	bottom: 13.7px;
+	left: 55px;
+	font-size: 12px;
+	color: lightgray;
+	margin: 0px 20px;
+}
+
+/* -------------------------------------------------------------------------------------SECTION ACTIVITE-------------------------------------------------------------------------------------------------- */
+#marseille
+{
+	position: relative;
+	top: 10px;
+	font-size: 30px;
+	margin-left: 50px;
+	font-weight: bold;
+}
+
+.activite
+{
+	height: 700px;
+	width: 98%;
+	font-size: 50px;
+	margin: 40px auto;
+	/*min-width: 1250px;*/
+}
+
+.activite-card
+{
+	display: flex;
+	justify-content: space-between;
+	height: 600px;
+	width: 95%;
+	font-size: 50px;
+	font-weight: bold;
+	margin: auto;
+}
+
+.activite-inside-card
+{
+	width: 23%;
+	border-radius: 30px;
+}
+
+.lien-activite-card
+{
+	width: 23%;
+}
+
+.lien-activite-mini-card
+{
+	position: relative;
+	bottom: 100px;
+}
+
+#activite-inside-mini-card2
+{
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	height: 41%;
+	width: 100%;
+	margin-bottom: 30px;
+
+}
+
+#activite-inside-mini-card3
+{
+	position: relative;
+	top: 100px;
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	height: 30%;
+	width: 100%;
+
+}
+
+#activite-inside-mini-card4
+{
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	height: 40%;
+	width: 100%;
+	margin-bottom: 75px;
+}
+
+#activite-inside-mini-card5
+{
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	height: 30%;
+	width: 100%;
+	
+	object-fit: cover;
+}
+
+.img-activite5
+{
+	width: 100%;
+	height: 207px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.img-activite1
+{
+	width: 100%;
+	height: 87%;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.img-activite2
+{
+	width: 100%;
+	height: 230px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	object-fit: cover;
+	margin: auto;
+	overflow : hidden;
+}
+
+.img-activite3
+{
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 142px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.img-activite4
+
+{
+	width: 100%;
+	height: 200px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.img-activite-card
+{
+	height: 120%;
+	width: 100%;
+	object-fit: cover;
+}
+
+
+.text-inside-activite-card
+{
+	text-align:justify;
+	font-size: 20px;
+	height: 80px;
+	padding-left: 20px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	background-color: white;
+	border: 1px solid lightgrey;
+	box-shadow: 2px 2px 5px lightgrey;
+	padding-top: 25px;
+}
+
+.activite-card-mobile
+{
+	display: none;
+	height: 300px;
+}
+
+
+/* --------------------------------------------------------------------------------------FOOTER-------------------------------------------------------------------------------------------------- */
+
+footer
+{
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	height: 300px;
+	font-size: 20px;
+	margin: 0px;
+	background-color: #F2F2F2;
+}
+
+.titre-info
+{
+	font-weight: bold;
+}
+
+.info
+{
+	position: relative;
+	left: 50px;
+	width: 30%;
+	padding-top: 35px;
+	list-style: none;
+}
+
+footer ul
+{
+	list-style: none;
+	position: relative;
+	right: 40px;
+	
+}
+
+footer li 
+{
+	margin: 15px 0px;
+	font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------------------MEDIA QUERY-------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------TABLETTE---------------------------------------------------------------------------------------------- */
+
+@media all and (max-width: 992px) and (min-width: 768px)
+{
+
+	.logo-miniature
+	{
+		width: 20%;
+	}
+	
+	/* --------------------------------------------------------------------------------------RECHERCHE TABLETTE------------------------------------------------------------------------------------------------- */
+	.recherche
+	{
+		width: 90%;
+		height: 640px;
+		margin: 0px auto;
+	}
+	
+	
+	#nature-ville
+	{
+		position: relative;
+		bottom: 0px;
+		margin-bottom: 60px;
+	}
+	
+	form
+	{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin: auto;
+	}
+	
+	#icon-map
+	{		
+		position: relative;
+		left: 65px;
+		width: 80px;
+		height: 80px;
+		z-index: 1;
+	}
+	
+	input[type="search"]
+	{
+		position: relative;
+		left: 50px;
+		height: 80px;
+		width: 65%;
+		font-size: 25px;
+		font-weight: bold;
+		padding-left: 30px;
+		border: 5px solid #F2F2F2 ;
+		z-index: 2;
+	}
+	
+	input[type="submit"]
+	{
+		position: relative;
+		right: 0px;
+		height: 80px;
+		width: 200px;
+		padding-left: 55px;
+		font-size: 25px;
+		font-weight: bold;
+		color: white;
+		background-color: #0065FC;
+		border: 1px solid #0065FC;
+		border-radius: 25px;
+	}
+	
+	button
+	{
+		position: relative;
+		right: 40px;
+		visibility: hidden;
+		height: 80px;
+		width: 100px;
+		color: white;
+		background-color: #0065FC;
+		border-radius: 25px;
+		font-size: 30px;
+		z-index: 3;
+	}
+	
+	.big-filtre
+	{
+		width: 100%;
+		margin: 50px auto;
+	}
+	
+	#titre-filtre
+	{
+		position: absolute;
+		visibility: hidden;
+	}
+	
+	#titre-filtre-mobile
+	{
+		position: relative;
+		top: 20px;
+		font-weight: bold;
+		visibility: visible;
+	}
+	
+	
+	.bordure-filtre
+	{
+		margin: 5px;
+	}
+	
+	
+	.text-filtre
+	{
+		position: relative;
+		left: 10px;
+		font-size: 20px;
+	}
+	
+	/*-------------------------------------------------------------------------------------SECTION TABLETTE------------------------------------------------------------------------------------------------- */
+	.info-logement
+	{
+		display: flex;
+		justify-content: flex-start;
+		width: 90%;
+		margin: 0px 0px 40px 30px;
+	}
+	
+	#icon-logement
+	{
+		position: relative;
+		right: 70px;
+		width: 24px;
+		height: 24px;
+		font-size: 15px;
+		margin-right: 20px;
+	}
+	
+	.logement
+	{
+		position: relative;
+		right: 80px;
+		width: 90%;
+		height: 50px;
+		font-size: 20px;
+		margin: auto 0px;
+	}
+	
+	#big-card
+	{
+		flex-direction: column;
+		justify-content: flex-end;
+		width: 98%;
+		height: 100%;
+		margin: 20px auto;
+	}
+	
+	#hebergement
+	{
+		height: 100%;
+		width: 100%;
+		background-color: #F2F2F2;
+		border-bottom: 40px solid white;
+		border-radius: 0px;
+	}
+	
+	#text-hebergement-bigcard
+	{
+		width: 100%;
+		font-size: 30px;
+		text-align: left;
+		margin: 30px 30px;
+		
+	}
+	
+	.hebergement-card
+	{
+		height: 100%;
+		width: 95%;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: auto ;
+	}
+	
+	.hebergement-inside-card
+	{
+		height: 450px;
+		width: 95%;
+		box-shadow: 3px 6px 12px lightgray;
+		font-size: 5px;
+		margin-left: 0px;
+		margin-bottom: 0px;
+		padding: 3px;
+		margin: 10px 18px;
+	}
+	
+	.img-hebergement
+	{
+		height: 350px;
+		width: 100%;
+		margin: auto;
+		overflow: hidden;
+	}
+	
+	.img-hebergement-card
+	{
+		height: 350px;
+		width: 100%;
+		border: 4px solid white;
+		object-fit: cover;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+	
+	h3
+	{
+		font-size: 25px;
+		margin: 0px 30px;
+	}
+	
+	
+	.populaire
+	{
+		width: 100%;
+		font-size: 50px;
+		border-radius: 0px;
+	}
+	
+	.populaire-card
+	{
+		position: relative;
+		top: 0px;
+		height: 660px;
+		
+	}
+	
+	.populaire-inside-card
+	{
+		position: relative;
+		left: 0px;
+		margin: 10px 5px;
+	}
+	
+	.prix-text-populaire-card-long
+	{
+		position:relative;
+		top: 0px;
+	}
+	
+	#marseille
+	{
+		position: relative;
+		top: 20px;
+		margin-left: 30px;
+	}
+	
+	.activite
+	{
+		height: 100%;
+		width: 98%;
+		margin: 30px auto;
+	}
+	
+	.activite-card
+	{
+		display: none;
+	}
+	
+	.activite-card-mobile
+	{
+		display: contents;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.activite-inside-card-mobile
+	{
+		width: 95%;
+		height: 420px;
+		border-radius: 30px;
+		margin: 20px auto;
+	}
+	
+	.img-activite5
+	{
+		height: 86%;
+	}
+	
+	.img-activite1
+	{
+		height: 86%;
+	}
+	
+	.img-activite2
+	{
+		height: 86%;
+	}
+	
+	.img-activite3
+	{
+		height: 86%;
+	}
+	
+	.img-activite4
+	
+	{
+		height: 86%;
+	}
+	
+	.img-activite-card
+	{
+		height: 100%;
+	}
+	
+	
+	.text-inside-activite-card
+	{
+		position: relative;
+		bottom: 00px;
+		height: 60px;
+		text-align:justify;
+		font-weight: bold;
+	}
+	
+	footer
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		width: 100%;
+		height: 350px;
+		margin: 0px;
+	}
+	
+	.info
+	{
+		position: relative;
+		left: 50px;
+		width: 80%;
+		padding-top: 00px;
+		list-style: none;
+		margin: 20px 0px;
+	}
+	
+	footer li 
+	{
+		margin: 20px 0px;
+		font-weight: 500;
+	}
+	
+	
+	
+}
+
+/* --------------------------------------------------------------------------------------MOBILE-------------------------------------------------------------------------------------------------- */
+@media all and (max-width: 768px)
+{
+	
+	/* --------------------------------------------------------------------------------------HEADER MOBILE-------------------------------------------------------------------------------------------------- */
+	header
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: inherit;
+		margin-bottom: 40px;
+	}
+	
+	
+	.logo-miniature
+	{
+		width: 100%;
+		height: 50%;
+	}
+	
+	nav
+	{
+		height: 50%;
+		width: 100%;
+	}
+	
+	.list-nav
+	{
+		justify-content: center;
+		height: 100%;
+		width: 100%;
+		border-bottom: 5px solid lightgray;
+	}
+	
+	
+	:hover.list-nav
+	{
+		border-bottom: 5px solid #0065FC;
+		border-top: 0px solid black;
+	}
+	
+	/* --------------------------------------------------------------------------------------RECHERCHE MOBILE------------------------------------------------------------------------------------------------- */
+	.recherche
+	{
+		width: 90%;
+		height: 640px;
+		margin: 0px auto;
+	}
+	
+	
+	#nature-ville
+	{
+		position: relative;
+		bottom: 0px;
+		margin-bottom: 60px;
+	}
+	
+	form
+	{
+		width: 110%;
+		margin-left: 0px;
+	}
+	
+	#icon-map
+	{		
+		width: 100px;
+		height: 80px;
+		z-index: 1;
+	}
+	
+	input[type="search"]
+	{	
+		height: 80px;
+		width: 69%;
+		z-index: 2;
+	}
+	
+	input[type="submit"]
+	{
+		position: absolute;
+		visibility: hidden;
+	}
+	
+	button
+	{
+		position: relative;
+		right: 40px;
+		visibility: inherit;
+		height: 80px;
+		width: 100px;
+		color: white;
+		background-color: #0065FC;
+		border-radius: 25px;
+		font-size: 30px;
+		z-index: 3;
+	}
+	
+	.big-filtre
+	{
+		width: 100%;
+		margin: 50px auto;
+	}
+	
+	#titre-filtre
+	{
+		position: absolute;
+		visibility: hidden;
+	}
+	
+	#titre-filtre-mobile
+	{
+		position: relative;
+		top: 20px;
+		font-weight: bold;
+		visibility: visible;
+	}
+	
+	
+	.bordure-filtre
+	{
+		margin: 5px;
+	}
+	
+	
+	.text-filtre
+	{
+		position: relative;
+		left: 10px;
+		font-size: 20px;
+	}
+	
+	/*-------------------------------------------------------------------------------------SECTION MOBILE------------------------------------------------------------------------------------------------- */
+	.info-logement
+	{
+		display: flex;
+		justify-content: flex-start;
+		width: 90%;
+		margin: 0px 0px 40px 30px;
+	}
+	
+	#icon-logement
+	{
+		position: relative;
+		right: 70px;
+		width: 24px;
+		height: 24px;
+		font-size: 15px;
+		margin-right: 20px;
+	}
+	
+	.logement
+	{
+		position: relative;
+		right: 80px;
+		width: 90%;
+		height: 50px;
+		font-size: 20px;
+		margin: auto 0px;
+	}
+	
+	#big-card
+	{
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		width: 98%;
+		height: 2600px;
+		margin: 20px auto;
+	}
+	
+	#hebergement
+	{
+		width: 100%;
+		background-color: white;
+		border-radius: 0px;
+	}
+	
+	#text-hebergement-bigcard
+	{
+		width: 100%;
+		font-size: 30px;
+		text-align: left;
+		margin: 30px 30px;
+		
+	}
+	
+	.hebergement-card
+	{
+		height: 1710px;
+		width: 95%;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin: auto ;
+		
+	}
+	
+	.hebergement-inside-card
+	{
+		height: 260px;
+		width: 95%;
+		box-shadow: 3px 6px 12px lightgray;
+		font-size: 5px;
+		margin-left: 0px;
+		margin-bottom: 0px;
+		padding: 3px;
+		margin: 10px 18px;
+	}
+	
+	h3
+	{
+		font-size: 25px;
+		margin: 0px 30px;
+	}
+	
+	
+	.populaire
+	{
+		width: 100%;
+		font-size: 50px;
+		border-radius: 0px;
+	}
+	
+	.populaire-card
+	{
+		position: relative;
+		top: 0px;
+		height: 660px;
+		
+	}
+	
+	.populaire-inside-card
+	{
+		position: relative;
+		left: 0px;
+		margin: 10px 5px;
+	}
+	
+	.prix-text-populaire-card-long
+	{
+		position:relative;
+		top: 0px;
+	}
+	
+	#marseille
+	{
+		position: relative;
+		top: 20px;
+		margin-left: 30px;
+	}
+	
+	.activite
+	{
+		height: 1650px;
+		width: 98%;
+		margin: 30px auto;
+	}
+	
+	.activite-card
+	{
+		display: none;
+	}
+	
+	.activite-card-mobile
+	{
+		display: contents;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 100%
+	}
+	
+	.activite-inside-card-mobile
+	{
+		width: 95%;
+		height: 200px;
+		border-radius: 30px;
+		margin: 30px auto;
+	}
+	
+	.img-activite5
+	{
+		height: 85%;
+	}
+	
+	.img-activite1
+	{
+		height: 86%;
+	}
+	
+	.img-activite2
+	{
+		height: 86%;
+	}
+	
+	.img-activite3
+	{
+		height: 86%;
+	}
+	
+	.img-activite4
+	
+	{
+		height: 86%;
+	}
+	
+	.img-activite-card
+	{
+		height: 140%;
+	}
+	
+	
+	.text-inside-activite-card
+	{
+		position: relative;
+		bottom: 0px;
+		height: 60px;
+		text-align:justify;
+		font-weight: bold;
+	}
+	
+	footer
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 100%;
+		height: 650px;
+		margin: 0px;
+	}
+	
+	.titre-info
+	{
+		font-weight: bold;
+	}
+	
+	.info
+	{
+		position: relative;
+		left: 00px;
+		width: 80%;
+		padding-top: 00px;
+		list-style: none;
+		margin: 20px 40px;
+	}
+	
+	
+}		
+
+/*-------------------------------------------------------------------------------------DESKTOP------------------------------------------------------------------------------------------------- */
+
+@media all and (max-width: 1305px) and (min-width: 992px)
+{
+
+	.recherche
+	{
+		width: 95%;
+		height: 400px;
+		margin: 30px auto;
+		margin-bottom: 110px;
+	}
+	
+	.big-filtre
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+		font-family: arial;
+		margin: 0px auto;
+	}
+	
+	#big-card
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 98%;
+		margin: 90px auto;
+	}
+	
+	#hebergement
+	{
+		height: 750px;
+		width: 100%;
+		background-color: #F2F2F2;
+		border-radius: 30px;
+		margin-bottom: 50px;
+		margin: 0px auto;
+	}
+	
+	.populaire
+	{
+		width: 100%;
+		height: 300px;
+		font-weight: bold;
+		text-align: center;
+		background-color: #F2F2F2;
+		border-radius: 30px;
+		margin: auto;
+		margin-top: 50px;
+	}
+	
+	.populaire-card
+	{
+		position: relative;
+		top: 60px;
+		height: 200px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+
+	.populaire-inside-card
+{
+	position: relative;
+	right: 0px;
+	display: flex;
+	justify-content: flex-start;
+	height: 175px;
+	width: 90%;
+	background-color: white;
+	border-radius: 30px;
+	margin:  15px 10px;	
+}
+}
